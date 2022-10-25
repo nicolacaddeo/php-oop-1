@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.movie-card {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+li {
+    list-style: none;
+    padding: 1rem 0;
+}
