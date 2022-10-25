@@ -16,10 +16,10 @@
             $this->budget = $_budget;
         }
 
-        public function getCaption($title, $mainGenre, $releaseDate, $budget ) {
+        public function getCaption($mainGenre) {
             ?>
             <p>
-                <?=$title ?> è un film <?=$mainGenre ?> uscito nelle sale il <?=$releaseDate ?> con un budget stimato di circa <?=$budget ?>
+                <?=$this->title ?> è un film <?=$mainGenre ?> uscito nelle sale il <?=$this->releaseDate ?> con un budget stimato di circa <?=$this->budget ?>
             </p>
             <?php
         }
@@ -80,7 +80,7 @@
                </li>
            </ol>
            <?php
-               $inception->getCaption("Inception", "Action", "July 16, 2010", "$160,000,000");
+               $inception->getCaption("Action");
            ?>
           </div>
           <div class="movie-card">
@@ -115,7 +115,7 @@
                </li>
            </ol>
            <?php
-               $oblivion->getCaption("Oblivion", "Action", "April 19, 2013", "$120,000,000");
+               $oblivion->getCaption("Action");
            ?>
           </div> 
        </div>
